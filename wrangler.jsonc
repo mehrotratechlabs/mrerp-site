@@ -1,0 +1,18 @@
+{
+  // Static marketing site for blueerp.me — no server code, assets only.
+  // Deployed manually: `npx wrangler deploy` from this directory (no Git connection).
+  "name": "blueerp",
+  "compatibility_date": "2026-08-12",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  // blueerp.me is the only canonical address; the *.workers.dev URL is retired
+  // so it cannot be indexed as duplicate content.
+  "workers_dev": false,
+  // Per-version public preview URLs — not wanted for a marketing site.
+  "preview_urls": false,
+  "observability": {
+    "enabled": true
+  }
+}
