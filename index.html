@@ -3,23 +3,389 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MisterERP</title>
-  <meta name="description" content="MisterERP: inventory and accounting software for Indian businesses, with full GST.">
+  <title>MisterERP: billing, stock, accounts and GST for Indian traders</title>
+  <meta name="description" content="MisterERP: inventory and accounting software for Indian businesses, with full GST. For pharma, textile, FMCG and electronics traders. Runs on your own Windows computers; your data stays with you.">
+  <meta name="theme-color" content="#f7f2ea" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1413" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="MisterERP">
+  <meta property="og:description" content="Billing, stock, accounts and GST for Indian traders. Runs on your own computers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrerp.in/">
+  <meta property="og:image" content="https://mrerp.in/apple-touch-icon.png">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="favicon.svg" alt="" width="34" height="34">MisterERP</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#features">Features</a>
+        <a href="#trades">Trades</a>
+        <a href="#gst">GST</a>
+        <a href="#data">Your data</a>
+        <a href="#questions">Questions</a>
+      </nav>
+      <a class="btn small" href="mailto:mehrotratechlabs@gmail.com?subject=MisterERP%20demo">Ask for a demo</a>
+    </div>
+  </header>
+
   <main>
-    <h1>MisterERP</h1>
-    <p class="muted">Inventory and accounting software for Indian businesses.</p>
-    <p>Purchase, sale, returns, stock, accounts and GST returns for Pharma, Textile, FMCG and Electronics traders. Runs on your own Windows computers; your data stays with you.</p>
-    <p>Contact: <a href="mailto:mehrotratechlabs@gmail.com">mehrotratechlabs@gmail.com</a></p>
-    <footer>
-      <a href="privacy.html">Privacy Policy</a>
-      © 2026 MisterERP
-    </footer>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="pill"><b>✓</b> Runs on your own computers · Full GST · Works without internet</p>
+          <h1>Billing, stock and accounts that stay <em>in your shop.</em></h1>
+          <p class="lede">MisterERP is inventory and accounting software for Indian traders in pharma, textile, FMCG and electronics. Purchase, sale, returns, stock, accounts and GST returns, on your own Windows computers.</p>
+          <div class="cta">
+            <a class="btn" href="mailto:mehrotratechlabs@gmail.com?subject=MisterERP%20demo">Ask for a demo</a>
+            <a class="btn ghost" href="#features">See what it does</a>
+          </div>
+          <ul class="ticks">
+            <li>Your data stays with you</li>
+            <li>Wholesale and retail</li>
+            <li>Regular and composition GST</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Illustration: a GST tax invoice with batch numbers, tax split and total, and a note that the bill passed the GST Check.">
+          <div class="sheet bill" aria-hidden="true">
+            <div class="bill-head">
+              <div>
+                <strong>Agarwal Medical Agencies</strong>
+                <span>Birhana Road, Kanpur<br>GSTIN 09ABCDE1234F1Z5</span>
+              </div>
+              <span class="bill-tag">TAX INVOICE</span>
+            </div>
+            <div class="bill-meta">
+              <span>Bill No. A-1042<br>To: New Life Chemists</span>
+              <span>12-11-2026<br>B2B · Credit</span>
+            </div>
+            <table>
+              <thead>
+                <tr><th>Item</th><th>Qty</th><th>Rate</th><th>Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Paracetamol 500 Tab<small>HSN 3004 · B.No PX2417 · Exp 08/28</small></td><td>20</td><td>18.00</td><td>360.00</td></tr>
+                <tr><td>Cough Syrup 100 ml<small>HSN 3004 · B.No CS0931 · Exp 03/28</small></td><td>12</td><td>62.50</td><td>750.00</td></tr>
+                <tr><td>ORS Sachet 21 g<small>HSN 3004 · B.No OR5520 · Exp 11/27</small></td><td>50</td><td>15.80</td><td>790.00</td></tr>
+              </tbody>
+            </table>
+            <div class="bill-foot">
+              <span class="stamp">GST CHECKED</span>
+              <dl class="bill-sum">
+                <dt>Taxable</dt><dd>1,900.00</dd>
+                <dt>CGST 2.5%</dt><dd>47.50</dd>
+                <dt>SGST 2.5%</dt><dd>47.50</dd>
+                <dt class="total">Total</dt><dd class="total">₹1,995.00</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="sheet slip" aria-hidden="true">
+            <i>✓</i>
+            <span><b>Posted to accounts</b>Stock, ledger and GST updated</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts">
+      <div class="wrap">
+        <p class="facts-label">Made for</p>
+        <ul class="chips">
+          <li>Pharma</li>
+          <li>Textile</li>
+          <li>FMCG</li>
+          <li>Electronics</li>
+          <li>Wholesale</li>
+          <li>Retail</li>
+        </ul>
+        <div class="facts-grid">
+          <div><strong>Full GST</strong><span>GSTR-1, 3B, 4 and 9</span></div>
+          <div><strong>Your own PC</strong><span>The database stays in your shop</span></div>
+          <div><strong>Every counter</strong><span>One server, the rest over LAN</span></div>
+          <div><strong>No internet</strong><span>needed to bill</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <p class="kicker">Features</p>
+        <h2>Everything from the first bill to the balance sheet.</h2>
+        <p class="lede">One program for the counter, the godown and the accountant. Every bill updates stock, the party's ledger and GST together.</p>
+
+        <div class="grid three">
+          <article class="card">
+            <span class="num">01</span>
+            <h3>Purchase, sale and returns</h3>
+            <p>Bills, returns, delivery challans, credit and debit notes and purchase orders. Take payment by cash, credit, UPI or card, or split one bill across them.</p>
+          </article>
+          <article class="card">
+            <span class="num">02</span>
+            <h3>Stock you can trust</h3>
+            <p>Barcodes, batches and expiry dates, several godowns and transfers between them. Reports for stock movement, non-moving items and expiry.</p>
+          </article>
+          <article class="card">
+            <span class="num">03</span>
+            <h3>Accounts built in</h3>
+            <p>Every bill posts its own voucher. Ledgers, journal and expense vouchers, cheques and PDC, trial balance, profit and loss, balance sheet and year closing.</p>
+          </article>
+          <article class="card">
+            <span class="num">04</span>
+            <h3>GST taken care of</h3>
+            <p>GSTR-1, GSTR-3B, GSTR-4 and GSTR-9, HSN summary, e-Invoice and e-Way Bill. A GST Check finds mistakes before you file.</p>
+          </article>
+          <article class="card">
+            <span class="num">05</span>
+            <h3>Supplier bills without typing</h3>
+            <p>Import the bill file your supplier sends from AIOCD or Marg. Any other file can be read by AI, using your own Gemini, Claude or OpenAI key.</p>
+          </article>
+          <article class="card">
+            <span class="num">06</span>
+            <h3>Every counter, one set of books</h3>
+            <p>One computer is the server; the other counters join over your shop's network and find it on their own. A new item or party shows on every counter straight away.</p>
+          </article>
+          <article class="card">
+            <span class="num">07</span>
+            <h3>Staff see only their work</h3>
+            <p>Give each user a role for each firm and decide what they can view, add or edit. The audit trail keeps every change made to a bill.</p>
+          </article>
+          <article class="card">
+            <span class="num">08</span>
+            <h3>Reports that open the bill</h3>
+            <p>Registers, outstanding, rate lists and profit by bill, customer, item or brand. Press Enter on any row to open its bill. Export to Excel, PDF or CSV.</p>
+          </article>
+          <article class="card">
+            <span class="num">09</span>
+            <h3>Backups you control</h3>
+            <p>Back up to your own disk or your own Google Drive, and restore a single firm or year when you need it. Email a report straight from the screen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="trades">
+      <div class="wrap">
+        <p class="kicker">Who it's for</p>
+        <h2>Set up for the way each trade sells.</h2>
+        <p class="lede">Pick your trade when you create the firm. The bill screen, units and reports follow it.</p>
+
+        <div class="grid two">
+          <article class="card">
+            <span class="tag">Pharma</span>
+            <h3>Chemists and medical agencies</h3>
+            <ul class="ticks">
+              <li>Batch, expiry and MRP on every barcode</li>
+              <li>Patient and doctor on retail bills</li>
+              <li>Expiry report and purchase return challans</li>
+              <li>Supplier bills imported from AIOCD and Marg</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag">Textile</span>
+            <h3>Cloth merchants and showrooms</h3>
+            <ul class="ticks">
+              <li>Sell by the metre from a piece</li>
+              <li>Many thans on one line for wholesale bills</li>
+              <li>A barcode for every cut</li>
+              <li>Brokers and transport on the bill</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag">FMCG</span>
+            <h3>Distributors and general stores</h3>
+            <ul class="ticks">
+              <li>Buy by the box, sell by the piece</li>
+              <li>Salesmen, areas and party outstanding</li>
+              <li>Deals, special discounts and commissions</li>
+              <li>A requirement list from minimum stock, turned into a purchase order</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="tag">Electronics</span>
+            <h3>Dealers and showrooms</h3>
+            <ul class="ticks">
+              <li>Brands and your own item attributes</li>
+              <li>Barcode billing and label printing</li>
+              <li>GST rate and HSN on every item</li>
+              <li>Brand-wise purchase, sale and profit reports</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gst">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">GST</p>
+          <h2>Find the mistake before the department does.</h2>
+          <p class="lede">Every GST return has a Check button. It reads the whole period and lists what does not agree, so you fix the bill and not the return.</p>
+          <ul class="ticks">
+            <li>Bill total against its lines and its accounting voucher</li>
+            <li>Tax type against the party's state and tax class</li>
+            <li>The check digit of every GSTIN</li>
+            <li>The same supplier bill entered twice</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sheet check" role="img" aria-label="Illustration: a GST Check result with four checks passed and one GSTIN to correct.">
+            <div class="check-head" aria-hidden="true"><span>GST Check</span><span>October 2026</span></div>
+            <ul aria-hidden="true">
+              <li><i>✓</i>Bill totals match their lines<span>214 bills</span></li>
+              <li><i>✓</i>Bills match their vouchers<span>214 bills</span></li>
+              <li><i>✓</i>Tax type matches party state<span>all</span></li>
+              <li class="warn"><i>!</i><div>GSTIN check digit<small>Shree Traders · 09ABCDE1234F1Z6</small></div><span>1 to fix</span></li>
+              <li><i>✓</i>No duplicate supplier bills<span>all</span></li>
+            </ul>
+          </div>
+          <p class="art-note">Sample result, for illustration</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="data">
+      <div class="wrap split">
+        <div>
+          <div class="lan" role="img" aria-label="Diagram: one server computer in the shop holds the database; two counters and the office connect to it over the shop's network.">
+            <div aria-hidden="true">
+              <span class="node main">Server PC<small>your database lives here</small></span>
+              <div class="wire"></div>
+              <div class="lan-row">
+                <span class="node">Counter 1<small>billing</small></span>
+                <span class="node">Counter 2<small>billing</small></span>
+                <span class="node">Office<small>accounts</small></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="kicker">Your data</p>
+          <h2>Your books never leave your shop.</h2>
+          <p class="lede">MisterERP is installed on your computers, not rented from a website. We do not receive, copy or store your items, parties, bills or accounts.</p>
+          <div class="points">
+            <div>
+              <h3>Kept on your own computer</h3>
+              <p>The database sits on your server PC. Nothing is uploaded unless you ask for it.</p>
+            </div>
+            <div>
+              <h3>Billing does not wait for the internet</h3>
+              <p>Counters talk to the server in your shop, so a dropped connection outside changes nothing.</p>
+            </div>
+            <div>
+              <h3>Online only where you choose</h3>
+              <p>Emailing a report, a Google Drive backup or AI bill import use the internet, and only when you turn them on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="kicker">Everything included</p>
+        <h2>The small things a busy counter needs.</h2>
+        <ul class="chips left">
+          <li>Barcode billing</li>
+          <li>Batch and expiry</li>
+          <li>Sell by metre</li>
+          <li>Box and piece units</li>
+          <li>Godown transfer</li>
+          <li>Delivery challans</li>
+          <li>Credit and debit notes</li>
+          <li>Purchase orders</li>
+          <li>Requirement list</li>
+          <li>Cheques and PDC</li>
+          <li>Multi cash receipt</li>
+          <li>Stock write-off</li>
+          <li>Rate list</li>
+          <li>Label designer</li>
+          <li>Direct print</li>
+          <li>Profit reports</li>
+          <li>Outstanding</li>
+          <li>HSN summary</li>
+          <li>Audit trail</li>
+          <li>User roles</li>
+          <li>Several firms and years</li>
+          <li>Year closing</li>
+          <li>Excel, PDF and CSV export</li>
+          <li>Keyboard shortcuts</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="questions">
+      <div class="wrap">
+        <p class="kicker">Questions</p>
+        <h2>Before you ask for a demo.</h2>
+        <div class="faq">
+          <details open>
+            <summary>Where is my data kept?</summary>
+            <p>In a database on your own computer or server. We do not receive, copy or store it. The <a href="privacy.html">privacy policy</a> says the same in full.</p>
+          </details>
+          <details>
+            <summary>Does it need the internet?</summary>
+            <p>Not for billing, stock, accounts or reports. The internet is used only for what you turn on yourself: emailing reports, backups to your Google Drive and AI bill import.</p>
+          </details>
+          <details>
+            <summary>Can several counters use it together?</summary>
+            <p>Yes. One computer is the server and the other counters connect over your shop's network. They find the server on their own, even after its address changes.</p>
+          </details>
+          <details>
+            <summary>Which businesses is it for?</summary>
+            <p>Pharma, textile, FMCG and electronics traders, wholesale or retail, registered as regular or composition dealers under GST.</p>
+          </details>
+          <details>
+            <summary>Can it read my supplier's bills?</summary>
+            <p>Yes. Purchase import reads the AIOCD invoice file and Marg's bill export formats. A file it cannot read can be passed to AI import, which runs on your own Gemini, Claude or OpenAI key.</p>
+          </details>
+          <details>
+            <summary>Which computers does it run on?</summary>
+            <p>Windows 10 and Windows 11.</p>
+          </details>
+          <details>
+            <summary>How do I get it, and what does it cost?</summary>
+            <p>Write to <a href="mailto:mehrotratechlabs@gmail.com?subject=MisterERP%20demo">mehrotratechlabs@gmail.com</a>. We will show it to you with your own kind of bills and tell you the price for your shop.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="band-box">
+          <h2>See it with your own bills.</h2>
+          <p>Tell us your trade and how many counters you have. We will show you MisterERP working the way your shop does.</p>
+          <a class="btn light" href="mailto:mehrotratechlabs@gmail.com?subject=MisterERP%20demo">Ask for a demo</a>
+          <small>or write to <a href="mailto:mehrotratechlabs@gmail.com">mehrotratechlabs@gmail.com</a></small>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="./"><img src="favicon.svg" alt="" width="34" height="34">MisterERP</a>
+        <p>Inventory and accounting software for Indian businesses, with full GST. Your data stays with you.</p>
+      </div>
+      <nav aria-label="Product">
+        <b>Product</b>
+        <a href="#features">Features</a>
+        <a href="#trades">Trades</a>
+        <a href="#gst">GST</a>
+        <a href="#questions">Questions</a>
+      </nav>
+      <nav aria-label="Contact and legal">
+        <b>Contact</b>
+        <a href="mailto:mehrotratechlabs@gmail.com">mehrotratechlabs@gmail.com</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+    <div class="wrap foot-end">© 2026 MisterERP</div>
+  </footer>
 </body>
 </html>

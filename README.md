@@ -6,6 +6,14 @@ analytics or build step.
 
 The MisterERP application itself is a separate repo, checked out at `C:\MisterERP`.
 
+## Design
+
+A ruled-paper look in the logo's colours (cream, brown ink, maroon), light and dark, all in
+`style.css`. System fonts only: a web font would be a third-party request, and `privacy.html`
+says the site has none. The bill, GST Check and LAN pictures on the home page are HTML/CSS
+illustrations with made-up data, not screenshots. The home page lists only what MisterERP does
+today; add a feature there when it ships.
+
 ## Privacy policy
 
 `privacy.html` is the page Google's OAuth consent screen links to. It covers only what MisterERP
