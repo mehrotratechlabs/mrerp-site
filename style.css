@@ -13,7 +13,6 @@
   --accent-soft: #f4e6e1;
   --ok: #2f6b4a;
   --btn: #a02a2a;
-  --btn-deep: #7d1f1f;
   --band: #3b2929;
   --band-ink: #f8f4f0;
   --band-muted: #cdbfb6;
@@ -68,14 +67,12 @@ code { font-family: var(--mono); font-size: .9em; background: var(--accent-soft)
 @media (max-width: 760px) { .nav { display: none; } .nav + .btn { margin-left: auto; } }
 
 /* Buttons */
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; border: 1px solid transparent; background: var(--btn); color: #fff; font: 600 15px/1.2 var(--sans); text-decoration: none; white-space: nowrap; box-shadow: 0 2px 0 var(--btn-deep); transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease; }
-.btn:hover { background: #ab3030; }
-.btn:active { transform: translateY(2px); box-shadow: 0 0 0 var(--btn-deep); }
-.btn.small { padding: 9px 16px; font-size: 14px; }
-.btn.ghost { background: var(--card); color: var(--ink); border-color: var(--line); box-shadow: 0 2px 0 var(--line); }
-.btn.ghost:hover { background: var(--card); border-color: var(--muted); }
-.btn.light { background: var(--band-ink); color: #3b2929; box-shadow: 0 2px 0 rgba(0, 0, 0, .35); }
-.btn.light:hover { background: #fff; }
+.btn { --edge: var(--btn); --face: #fff8f6; --depth: 5px; display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border: 2px solid var(--edge); border-radius: 13px; background: var(--face); color: var(--edge); font: 700 15px/1.2 var(--sans); text-decoration: none; white-space: nowrap; box-shadow: 0 var(--depth) 0 var(--edge); transition: transform .14s ease, box-shadow .14s ease; }
+.btn:hover { transform: translateY(-1px) rotate(-2deg); box-shadow: 1px calc(var(--depth) + 2px) 0 var(--edge); }
+.btn:active { transform: translateY(var(--depth)); box-shadow: 0 0 0 var(--edge); }
+.btn.small { --depth: 4px; padding: 7px 15px; border-radius: 11px; font-size: 14px; }
+.btn.ghost { --edge: #b3a398; --face: var(--card); color: var(--ink); }
+.btn.light { --edge: #e2988f; color: var(--btn); }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
 
 /* Shared bits */
