@@ -16,13 +16,13 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600..800&amp;family=Public+Sans:wght@400..700&amp;family=Spline+Sans+Mono:wght@400..700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600..800&amp;family=Public+Sans:wght@400..700&amp;family=Spline+Sans+Mono:wght@400..700&amp;family=Caveat:wght@500..700&amp;display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="top">
     <div class="wrap">
-      <a class="brand" href="./"><img src="favicon.svg" alt="" width="34" height="34">MisterERP</a>
+      <a class="brand" href="./"><img src="favicon.svg" alt="" width="34" height="34"><span>Mister<em>ERP</em></span></a>
       <nav class="nav" aria-label="Sections">
         <a href="#features">Features</a>
         <a href="#trades">Trades</a>
@@ -52,7 +52,7 @@
           </ul>
         </div>
 
-        <div class="hero-art" role="img" aria-label="Illustration: a GST tax invoice with batch numbers, tax split and total, and a note that the bill passed the GST Check.">
+        <div class="hero-art" role="img" aria-label="Illustration: a GST tax invoice with batch numbers, tax split and total, a GST checked stamp and a handwritten received note.">
           <div class="sheet bill" aria-hidden="true">
             <div class="bill-head">
               <div>
@@ -76,12 +76,16 @@
               </tbody>
             </table>
             <div class="bill-foot">
-              <span class="stamp">GST CHECKED</span>
+              <div class="bill-marks">
+                <span class="hand">Recd. 12/11</span>
+                <svg viewBox="0 0 78 30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 20C8 4 14 2 16 12s-6 14-4 4c3-12 14-10 16 0 1 6 6-6 10-2s6-6 12-2 10 0 20-2M6 27c24-4 49-2 68-6"/></svg>
+                <span class="stamp">GST checked</span>
+              </div>
               <dl class="bill-sum">
                 <dt>Taxable</dt><dd>1,900.00</dd>
                 <dt>CGST 2.5%</dt><dd>47.50</dd>
                 <dt>SGST 2.5%</dt><dd>47.50</dd>
-                <dt class="total">Total</dt><dd class="total">₹1,995.00</dd>
+                <dt class="total">Total</dt><dd class="total"><span class="circled">₹1,995.00</span></dd>
               </dl>
             </div>
           </div>
@@ -235,16 +239,20 @@
         </div>
         <div>
           <div class="sheet check" role="img" aria-label="Illustration: a GST Check result with four checks passed and one GSTIN to correct.">
-            <div class="check-head" aria-hidden="true"><span>GST Check</span><span>October 2026</span></div>
+            <div class="check-head" aria-hidden="true"><span>GST Check · October 2026</span></div>
+            <span class="stamp big" aria-hidden="true">Checked<small>31 Oct 2026</small></span>
             <ul aria-hidden="true">
               <li><i>✓</i>Bill totals match their lines<span>214 bills</span></li>
               <li><i>✓</i>Bills match their vouchers<span>214 bills</span></li>
               <li><i>✓</i>Tax type matches party state<span>all</span></li>
-              <li class="warn"><i>!</i><div>GSTIN check digit<small>Shree Traders · 09ABCDE1234F1Z6</small></div><span>1 to fix</span></li>
               <li><i>✓</i>No duplicate supplier bills<span>all</span></li>
+              <li class="warn"><i>!</i><div>GSTIN check digit<small>Shree Traders · 09ABCDE1234F1Z6</small></div><span><span class="circled red">1 to fix</span></span></li>
             </ul>
           </div>
-          <p class="art-note">Sample result, for illustration</p>
+          <div class="check-notes" aria-hidden="true">
+            <p class="art-note">Sample result, for illustration</p>
+            <p class="hand red">fix this one, then file<svg viewBox="0 0 30 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 30c12 0 20-8 20-25M15 11l8-8 5 10"/></svg></p>
+          </div>
         </div>
       </div>
     </section>
@@ -261,6 +269,14 @@
                 <span class="node">Counter 2<small>billing</small></span>
                 <span class="node">Office<small>accounts</small></span>
               </div>
+              <svg class="seal" viewBox="0 0 120 120">
+                <defs><path id="seal-arc" d="M15 60a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs>
+                <circle cx="60" cy="60" r="57" stroke-width="2.5"/>
+                <circle cx="60" cy="60" r="33" stroke-width="1.2"/>
+                <text><textPath href="#seal-arc" textLength="276">STAYS IN YOUR SHOP • STAYS IN YOUR SHOP • </textPath></text>
+                <text class="mid" x="60" y="57" text-anchor="middle">YOUR</text>
+                <text class="mid" x="60" y="72" text-anchor="middle">DATA</text>
+              </svg>
             </div>
           </div>
         </div>
@@ -323,35 +339,38 @@
       <div class="wrap">
         <p class="kicker">Questions</p>
         <h2>Before you ask for a demo.</h2>
-        <div class="faq">
-          <details open>
-            <summary>Where is my data kept?</summary>
-            <p>In a database on your own computer or server. We do not receive, copy or store it. The <a href="privacy.html">privacy policy</a> says the same in full.</p>
-          </details>
-          <details>
-            <summary>Does it need the internet?</summary>
-            <p>Not for billing, stock, accounts or reports. The internet is used only for what you turn on yourself: emailing reports, backups to your Google Drive and AI bill import.</p>
-          </details>
-          <details>
-            <summary>Can several counters use it together?</summary>
-            <p>Yes. One computer is the server and the other counters connect over your shop's network. They find the server on their own, even after its address changes.</p>
-          </details>
-          <details>
-            <summary>Which businesses is it for?</summary>
-            <p>Pharma, textile, FMCG and electronics traders, wholesale or retail, registered as regular or composition dealers under GST.</p>
-          </details>
-          <details>
-            <summary>Can it read my supplier's bills?</summary>
-            <p>Yes. Purchase import reads the AIOCD invoice file and Marg's bill export formats. A file it cannot read can be passed to AI import, which runs on your own Gemini, Claude or OpenAI key.</p>
-          </details>
-          <details>
-            <summary>Which computers does it run on?</summary>
-            <p>Windows 10 and Windows 11.</p>
-          </details>
-          <details>
-            <summary>How do I get it, and what does it cost?</summary>
-            <p>Write to <a href="mailto:mehrotratechlabs@gmail.com?subject=MisterERP%20demo">mehrotratechlabs@gmail.com</a>. We will show it to you with your own kind of bills and tell you the price for your shop.</p>
-          </details>
+        <div class="faq-row">
+          <div class="faq">
+            <details open>
+              <summary>Where is my data kept?</summary>
+              <p>In a database on your own computer or server. We do not receive, copy or store it. The <a href="privacy.html">privacy policy</a> says the same in full.</p>
+            </details>
+            <details>
+              <summary>Does it need the internet?</summary>
+              <p>Not for billing, stock, accounts or reports. The internet is used only for what you turn on yourself: emailing reports, backups to your Google Drive and AI bill import.</p>
+            </details>
+            <details>
+              <summary>Can several counters use it together?</summary>
+              <p>Yes. One computer is the server and the other counters connect over your shop's network. They find the server on their own, even after its address changes.</p>
+            </details>
+            <details>
+              <summary>Which businesses is it for?</summary>
+              <p>Pharma, textile, FMCG and electronics traders, wholesale or retail, registered as regular or composition dealers under GST.</p>
+            </details>
+            <details>
+              <summary>Can it read my supplier's bills?</summary>
+              <p>Yes. Purchase import reads the AIOCD invoice file and Marg's bill export formats. A file it cannot read can be passed to AI import, which runs on your own Gemini, Claude or OpenAI key.</p>
+            </details>
+            <details>
+              <summary>Which computers does it run on?</summary>
+              <p>Windows 10 and Windows 11.</p>
+            </details>
+            <details>
+              <summary>How do I get it, and what does it cost?</summary>
+              <p>Write to <a href="mailto:mehrotratechlabs@gmail.com?subject=MisterERP%20demo">mehrotratechlabs@gmail.com</a>. We will show it to you with your own kind of bills and tell you the price for your shop.</p>
+            </details>
+          </div>
+          <aside class="sheet pinned hand">Something we did not answer? Just write to us.<a href="mailto:mehrotratechlabs@gmail.com">mehrotratechlabs@gmail.com</a></aside>
         </div>
       </div>
     </section>
@@ -371,7 +390,7 @@
   <footer class="foot">
     <div class="wrap">
       <div>
-        <a class="brand" href="./"><img src="favicon.svg" alt="" width="34" height="34">MisterERP</a>
+        <a class="brand" href="./"><img src="favicon.svg" alt="" width="34" height="34"><span>Mister<em>ERP</em></span></a>
         <p>Inventory and accounting software for Indian businesses, with full GST. Your data stays with you.</p>
       </div>
       <nav aria-label="Product">
